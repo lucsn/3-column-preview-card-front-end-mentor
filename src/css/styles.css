@@ -1,0 +1,8 @@
+.copyright {
+    font-size: 11px;
+    text-align: center;
+}
+
+.copyright a {
+    color: hsl(228, 45%, 44%);
+}
