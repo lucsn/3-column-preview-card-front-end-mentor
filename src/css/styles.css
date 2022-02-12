@@ -1,8 +1,163 @@
+@import url('https://fonts.googleapis.com/css2? family= Big+Shoulders+Display:wght@700 & family= Lexend+Deca & display=swap');
+
+:root {
+    /* Cores primarias */
+    --var-bright-orange: hsl(31, 77%, 52%);
+    --var-dark-cyan: hsl(184, 100%, 22%);
+    --var-very-dark-cyan: hsl(179, 100%, 13%);
+
+    /* Cores neutras */
+    --var-transparent-white: hsla(0, 0%, 100%, 0.75);
+    /*paragraphs*/
+    --var-very-light-gray: hsl(0, 0%, 95%);
+    /* background, headings, buttons */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 15px;
+}
+
+body {
+    background-color: var(--var-very-light-gray);
+}
+
+
+.content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 60vw;
+    min-height: 75vh;
+    border-right: 5px solid var(--var-very-dark-cyan);
+    border-radius: 10px;
+    border-left: 5px solid var(--var-bright-orange);
+    border-radius: 10px;
+}
+
+.content .card {
+    margin: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 2rem;
+    text-align: left;
+    width: 100%;
+    height: 100%;
+}
+
+.content .sedans {
+    background-color: var(--var-bright-orange);
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    /* overflow: hidden; */
+}
+
+.content .suvs {
+    background-color: var(--var-dark-cyan);
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.content .luxury {
+    background-color: var(--var-very-dark-cyan);
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+
+.content .card .icon {
+    width: 55px;
+}
+
+.content .card .titulo {
+    color: var(--var-very-light-gray);
+    text-transform: uppercase;
+    font-family: 'Lexend Deca', sans-serif;
+    margin: -20px 0;
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+
+.content .card .descricao {
+    color: var(--var-transparent-white);
+    font-size: 0.9rem;
+    font-family: 'Big Shoulders Display', cursive;
+    font-weight: 400;
+    text-align: left;
+}
+
+.content .sedans .btn-leia-mais {
+    color: var(--var-bright-orange);
+    background-color: var(--var-very-light-gray);
+    border: 2px solid white;
+    padding: 8px 25px;
+    border-radius: 30px;
+    font-size: 0.8rem;
+}
+
+.content .suvs .btn-leia-mais {
+    color: var(--var-dark-cyan);
+    background-color: var(--var-very-light-gray);
+    border: 2px solid white;
+    padding: 8px 25px;
+    border-radius: 30px;
+    font-size: 0.8rem;
+}
+
+.content .luxury .btn-leia-mais {
+    color: var(--var-very-dark-cyan);
+    background-color: var(--var-very-light-gray);
+    border: 2px solid white;
+    padding: 8px 25px;
+    border-radius: 30px;
+    font-size: 0.8rem;
+}
+
+
 .copyright {
-    font-size: 11px;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -100%);
+    font-size: 1.3rem;
     text-align: center;
+    color: var(--var-very-dark-cyan);
 }
 
 .copyright a {
-    color: hsl(228, 45%, 44%);
+    text-decoration: none;
+    font-size: 1.3rem;
+    color: var(--var-bright-orange);
+}
+
+
+
+
+@media (max-width: 770px) {
+    .content {
+        flex-direction: column;  
+        border-bottom: 5px solid var(--var-very-dark-cyan);
+    border-radius: 10px;
+    border-top: 5px solid var(--var-bright-orange);
+    border-radius: 10px; 
+    }
+
+    .content .card {
+        min-width: 20vw ; 
+        min-height: 70vh;
+     
+    }
 }
