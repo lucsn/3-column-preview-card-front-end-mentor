@@ -56,22 +56,16 @@ body {
 .content .sedans {
     background-color: var(--var-bright-orange);
     margin: 0;
-    width: 100%;
-    height: 100%;
 }
 
 .content .suvs {
     background-color: var(--var-dark-cyan);
     margin: 0;
-    width: 100%;
-    height: 100%;
 }
 
 .content .luxury {
     background-color: var(--var-very-dark-cyan);
     margin: 0;
-    width: 100%;
-    height: 100%;
 }
 
 .content .card .icon {
@@ -95,31 +89,26 @@ body {
     text-align: left;
 }
 
-.content .sedans .btn-leia-mais {
+.content .btn-leia-mais {
+    border: 2px solid white;
+    padding: 8px 25px;
+    border-radius: 30px;
+    font-size: 0.8rem;
+}
+
+.content .sedans .btn-color {
     color: var(--var-bright-orange);
     background-color: var(--var-very-light-gray);
-    border: 2px solid white;
-    padding: 8px 25px;
-    border-radius: 30px;
-    font-size: 0.8rem;
 }
 
-.content .suvs .btn-leia-mais {
+.content .suvs .btn-color {
     color: var(--var-dark-cyan);
     background-color: var(--var-very-light-gray);
-    border: 2px solid white;
-    padding: 8px 25px;
-    border-radius: 30px;
-    font-size: 0.8rem;
 }
 
-.content .luxury .btn-leia-mais {
+.content .luxury .btn-color {
     color: var(--var-very-dark-cyan);
     background-color: var(--var-very-light-gray);
-    border: 2px solid white;
-    padding: 8px 25px;
-    border-radius: 30px;
-    font-size: 0.8rem;
 }
 
 .content .card .btn-leia-mais:hover {
